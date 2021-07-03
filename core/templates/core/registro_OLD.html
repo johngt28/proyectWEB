@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>GRUPOZER0</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{%static 'core/css/bootstrap.min.css'%}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{%static 'core/css/style.css'%}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{%static 'core/css/responsive.css'%}">
+    <!-- fevicon -->
+    <link rel="icon" href="{%static 'core/images/fevicon.png'%}" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{%static 'core/css/jquery.mCustomScrollbar.min.css'%}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{%static 'core/images/loading.gif'%}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{%static 'core/images/logo.png'%}"></a>
+                                </div>
+                                <!-- Image Logo -->
+                                <!-- <a href="index.html"><img src="images/logo.png" alt="alternative" width="100" height="100"></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="active"> <a href="index.html">INICIO</a> </li>
+                                        <li> <a href="#download">GALERIA</a> </li>
+                                        <li> <a href="#service"> ARTISTAS</a> </li>
+                                        <!-- <li> <a href="#download">Screenshot</a> </li>-->
+                                        <li> <a href="#testimonial">CONTACTO</a> </li>
+                                        <li class="mean-last">
+                                            <a href="#"><img src="{%static 'core/images/search_icon.png'%}" alt="#" /></a>
+                                        </li>
+                                        <li class="mean-last">
+                                            <a href="#"><img src="{%static 'core/images/sesion.png'%}" alt="#" width="50" height="50" /></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+    </header>
+    <!-- end header -->
+
+    <!-- Testimonial -->
+    <div id="testimonial" class="testimonial" style="background-color:#fff;">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="contact" style="background-color:#D5DBDB ;">
+                    <h3>REGISTRO</h3>
+                    <form metod="POST" id="registry_user">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="NOMBRE DE USUARIO *" type="text" name="Name_User" id="username">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="NOMBRE *" type="text" name="Name" id="first_name">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="APELLIDO *" type="text" name="Last_name" id="last_name">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="EMAIL *" type="text" name="Email" id="email">
+                            </div>
+                            <div class="col-sm-12">
+                                <input class="contactus" placeholder="CONTRASEÑA *" type="password" name="Password" id="password">
+                            </div>
+<!--                            <div clas="row" id="acepto_terminos">
+                                <div class="col-12" class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Acepto terminos y condiciones</label>
+                                </div>
+                            </div>-->
+                            <div class="col-sm-12">
+                                <button class="send" type="submit">REGISTRARME</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end Testimonial -->
+    <!--  footer -->
+    <footr>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Medios de Pago</h3>
+                            <i><img src="{%static 'core/images/webpay.png'%}"></i>
+                        </div>
+                    </div>
+                    <!--<div class="col-lg-2 col-md-6 col-sm-12 width">
+                     <div class="address">
+                        <h3>Menus</h3>
+                        <i><img src="icon/2.png">Locations</i>
+                     </div>
+                  </div>
+                   <div class="col-lg-2 col-md-6 col-sm-12 width">
+                     <div class="address">
+                        <h3>Useful Linkes</h3>
+                        <i><img src="icon/1.png">Locations</i>
+                     </div>
+                  </div>-->
+                    <div class="col-lg-2 col-md-6 col-sm-12 width">
+                        <div class="address">
+                            <h3>Redes Sociales</h3>
+                            <ul class="contant_icon">
+                                <li><img src="{%static 'core/icon/fb.png'%}" alt="icon" /></li>
+                                <li><img src="{%static 'core/icon/tw.png'%}" alt="icon" /></li>
+                                <li><img src="{%static 'core/icon/lin (2).png'%}" alt="icon" /></li>
+                                <li><img src="{%static 'core/icon/instagram.png'%}" alt="icon" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 width">
+                        <div class="address">
+                            <h3> Novedades </h3>
+                            <input class="form-control" placeholder="Ingresa tu Email" type="type" name="Enter your email">
+                            <button class="submit-btn">Suscríbete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2021 All Right Reserved By JOHN PATRICK INDUSTRIES</p>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="{%static 'core/js/jquery.min.js'%}"></script>
+    <script src="{%static 'core/js/popper.min.js'%}"></script>
+    <script src="{%static 'core/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{%static 'core/js/jquery-3.0.0.min.js'%}"></script>
+    <script src="{%static 'core/js/plugin.js'%}"></script>
+    <!-- sidebar -->
+    <script src="{%static 'core/js/jquery.mCustomScrollbar.concat.min.js'%}"></script>
+    <script src="{%static 'core/js/custom.js'%}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var formulario = document.getElementById('registry');
+        formulario.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var datos = new FormData(formulario);
+            var usern = datos.get('username');
+            var fname = datos.get('first_name');
+            var lname = datos.get('last_name');
+            var email = datos.get('email');
+            var passw = datos.get('password');
+
+            if (usern == '' || fname == '' || lname == '' || email == '' || passw == '') {
+                Email.send({}).then(function(message) {
+                    alert("Debes completar todos los campos minimos para poder registrarte.")
+                });
+            } else {
+                Email.send({
+                    SecureToken: "3a4fd479-5e0c-4a57-b9aa-1d34ca8a2e34",
+                    To: mail,
+                    From: "grupo.zer0.noresponse@gmail.com",
+                    Subject: "Grupo Cero - Registro Exitoso",
+                    Body: "Bienvenido " + fname + " " + lname + ". Te has registrado exitosamente con el usuario: " + usern
+                }).then(function(message) {
+                    alert("Te has registrado exitosamente")
+                });
+            }
+        })
+    </script>
+</body>
+</html>
